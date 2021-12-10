@@ -1,6 +1,6 @@
 /*
 
-	SecDump by failbr34k(80HD) 2021
+	SecDump by 80HD 2021
 	
 	All credit is given where due.
 
@@ -413,9 +413,9 @@ SecKeyRef replaced_SecKeyCreateECPrivateKey(CFAllocatorRef allocator,
 		CFDataRef _Nullable data = SecKeyCopyExternalRepresentation(r, nil);
 		
 		if (data != nil)
-		{WLog(@"SecKeyCreateRandomKey: %@", data);}
+		{WLog(@"SecKeyCreateECPrivateKey: %@", data);}
 		else 
-		{WLog(@"SecKeyCreateRandomKey orig: %@", r);}
+		{WLog(@"SecKeyCreateECPrivateKey orig: %@", r);}
 		return r;
 		
 	}
